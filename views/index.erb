@@ -10,12 +10,12 @@
        rows.times do  |r| %>
        <tr>
          <% cols.times do |c| %>
-           <% rc = "#{r},#{c}" %>
-           <td onmouseover="javascript:gridHover(<%= rc %>);" 
-               oncontextmenu="javascript:gridAlt(<%= rc %>);return false;" 
-               onclick="javascript:gridSelect(<%= rc %>);" 
-               ondblclick="javascript:gridRun(<%= rc %>);"> 
-             <%= rc %> 
+           <% cr = "#{c},#{r}" %>
+           <td onmouseover="javascript:gridHover(<%= cr %>);" 
+               oncontextmenu="javascript:gridAlt(<%= cr %>);return false;" 
+               onclick="javascript:gridSelect(<%= cr %>);" 
+               ondblclick="javascript:gridRun(<%= cr %>);"> 
+             <%= cr %> 
            </td>
          <% end # cols %>
       </tr>
