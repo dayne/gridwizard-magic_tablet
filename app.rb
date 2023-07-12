@@ -1,6 +1,9 @@
+require 'rubygems'
 require 'sinatra'
 require 'mqtt'
 require 'json'
+
+set :jquery_version, 'node_modules/jquery/dist/jquery.js'
 
 configure do
   set :mqtt, MQTT::Client.connect('localhost') 
